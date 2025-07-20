@@ -1,0 +1,35 @@
+﻿@{
+    ViewData["Title"] = "Ana Sayfa";
+}
+
+@section css {
+    <link href="~/css/home.min.css" rel="stylesheet" />
+}
+
+<section class="showcase pt-5">
+    <div class="container h-100">
+        <div class="row h-100 d-flex justify-content-center align-items-center pb-5">
+            <div class="col-md-6">
+                <div class="my-card">
+                    <h2 id="typewriter">Hesaplamanın En Kolay Hali!</h2>
+                    <p>
+                        HepsiHesap, günlük yaşamda ihtiyacınız olan en pratik hesaplamaları tek bir yerde toplar. İster yaşınızı öğrenin, ister zaman farkı hesaplayın, ister teknik bir ölçümü kolayca çözümleyin — hepsi sadece bir tık uzağınızda! Mesela;
+                    </p>
+                    <h5 class="text-success">Sence kaç gündür hayattasın?</h5>
+                    <hr />
+                    <form id="lifeForm">
+                        <div class="form-group">
+                            <label for="birthDate">Doğum Tarihinizi Seçin</label>
+                            <input type="date" class="form-control" id="birthDate" required>
+                        </div>
+                        <button type="submit" class="btn btn-success mt-3">Öğren</button>
+                    </form>
+                    <p id="result" class="mt-2 text-primary font-weight-bold text-center"></p>
+                </div>
+            </div>
+            <div class="col-md-5">
+                <img class="img-fluid" src="img/hh-design1.png" alt="" />
+            </div>
+        </div>
+    </div>
+</section>

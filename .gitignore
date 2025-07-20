@@ -1,0 +1,20 @@
+# Build outputs
+bin/
+obj/
+*.exe
+*.dll
+*.pdb
+
+# VS-specific
+.vs/
+*.suo
+*.user
+
+# Rider-specific (eðer JetBrains kullanýyorsan)
+.idea/
+
+# Temporary
+*.log
+*.dbmdl
+*.cache
+*.FileListAbsolute.txt
