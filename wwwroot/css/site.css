@@ -71,6 +71,5 @@ header {
 .my-card {
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
   padding: 1rem 1.5rem;
-  margin: 1rem;
   border-radius: 2rem;
 }
