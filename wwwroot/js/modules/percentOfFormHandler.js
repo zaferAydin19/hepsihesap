@@ -1,13 +1,14 @@
 ﻿// assets/js/modules/percentOfFormHandler.js
 
 import { percentOf } from './percentOfCalc.js';
+import { parseTurkishNumber } from './parseTurkishNumber.js';
 
 export function setupPercentOfFormHandler(formSelector = '#percentOfForm', resultSelector = '#percentOfResult') {
     $(formSelector).on('submit', function (e) {
         e.preventDefault();
 
-        const a = parseFloat($('#numberA2').val());
-        const b = parseFloat($('#numberB2').val());
+        const a = parseTurkishNumber($('#numberA2').val());
+        const b = parseTurkishNumber($('#numberB2').val());
 
         if (isNaN(a) || isNaN(b)) {
             $(resultSelector).text('Lütfen iki sayıyı da girin.');

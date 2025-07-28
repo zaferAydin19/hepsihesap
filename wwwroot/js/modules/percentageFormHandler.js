@@ -1,13 +1,13 @@
 ﻿// assets/js/modules/percentageFormHandler.js
 
 import { calculatePercentage } from './percentageCalc.js';
+import { parseTurkishNumber } from './parseTurkishNumber.js';
 
 export function setupPercentageFormHandler(formSelector = '#percentForm', resultSelector = '#percentResult') {
     $(formSelector).on('submit', function (e) {
         e.preventDefault();
-
-        const numberA = parseFloat($('#numberA').val());
-        const percentVal = parseFloat($('#percentVal').val());
+        const numberA = parseTurkishNumber($('#numberA').val());
+        const percentVal = parseTurkishNumber($('#percentVal').val());
 
         if (isNaN(numberA) || isNaN(percentVal)) {
             $(resultSelector).text('Lütfen geçerli bir sayı ve yüzde değeri girin.');

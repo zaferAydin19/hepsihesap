@@ -13,7 +13,7 @@
                 <div class="my-card">
                     <h2 id="typewriter">Hesaplamanın En Kolay Hali!</h2>
                     <p>
-                        HepsiHesap, günlük yaşamda ihtiyacınız olan en pratik hesaplamaları tek bir yerde toplar. İster yaşınızı öğrenin, ister zaman farkı hesaplayın, ister teknik bir ölçümü kolayca çözümleyin — hepsi sadece bir tık uzağınızda! Mesela;
+                        HepsiHesap, günlük yaşamda ihtiyacınız olan en pratik hesaplamaları tek bir yerde toplar. İster yaşınızı öğrenin, ister zaman farkı hesaplayın, ister teknik bir ölçümü kolayca çözümleyin. Mesela;
                     </p>
                     <h5 class="text-success">Sence kaç gündür hayattasın?</h5>
                     <hr />
@@ -56,42 +56,42 @@
     <h1 class="text-center">Hızlı Hesaplamalar</h1>
     <hr />
     <div class="row">
-        <div class="col-lg-3 col-md-4 mb-4">
+        <div class="col-md-4 mb-4">
             <div class="my-card">
                 <div class="d-flex flex-column align-items-center justify-content-center text-center">
-                    <img class="w-25" src="/img/hh-icon2.png" alt="" />
+                    <img class="card-icon" src="/img/hh-icon2.png" alt="" />
                     <h5>A sayısının yüzdelik hesaplaması?</h5>
                 </div>
                 <form id="percentForm" class="row g-2 align-items-center">
                     <div class="col">
-                        <input type="number" step="any" min="0" id="numberA" class="form-control" placeholder="Sayı (A)" required />
+                        <input type="text" step="any" min="0" id="numberA" class="form-control" placeholder="Sayı (A)" required maxlength="14" />
                     </div>
                     <div class="col-auto text-center">
                         <span style="font-size: 2rem;">%</span>
                     </div>
                     <div class="col">
-                        <input type="number" step="any" min="0" max="100" id="percentVal" class="form-control" placeholder="Yüzde" required />
+                        <input type="text" step="any" min="0" max="100" id="percentVal" class="form-control" placeholder="Yüzde" required maxlength="14" />
                     </div>
                     <button type="submit" class="btn btn-outline-success mt-3">Öğren</button>
                 </form>
                 <div id="percentResult" class="mt-2"></div>
             </div>
         </div>
-        <div class="col-lg-3 col-md-4 mb-4">
+        <div class="col-md-4 mb-4">
             <div class="my-card">
                 <div class="d-flex flex-column align-items-center justify-content-center text-center">
-                    <img class="w-25" src="/img/hh-icon2.png" alt="" />
+                    <img class="card-icon" src="/img/hh-icon2.png" alt="" />
                     <h5>A sayısı, B sayısının yüzde kaçıdır?</h5>
                 </div>
                 <form id="percentOfForm" class="row g-2 align-items-center">
                     <div class="col">
-                        <input type="number" step="any" min="0" id="numberA2" class="form-control" placeholder="A sayısı" required />
+                        <input type="text" step="any" min="0" id="numberA2" class="form-control" placeholder="A sayısı" required maxlength="14" />
                     </div>
                     <div class="col-auto text-center">
                         <span style="font-size: 2rem;">%</span>
                     </div>
                     <div class="col">
-                        <input type="number" step="any" min="0" id="numberB2" class="form-control" placeholder="B sayısı" required />
+                        <input type="text" step="any" min="0" id="numberB2" class="form-control" placeholder="B sayısı" required maxlength="14" />
                     </div>
                     <button type="submit" class="btn btn-outline-success mt-3">Öğren</button>
 
